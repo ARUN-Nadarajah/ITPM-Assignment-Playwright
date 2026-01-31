@@ -225,7 +225,7 @@ test.describe("Positive Test Cases - Tamil Transliteration", () => {
     );
   });
 
-  test("Pos_Fun_0018 - request", async ({ page }, testInfo) => {
+  test("Pos_Fun_0018 - request with punctuation", async ({ page }, testInfo) => {
     await runPositiveTest(
       page,
       testInfo,
@@ -234,7 +234,7 @@ test.describe("Positive Test Cases - Tamil Transliteration", () => {
     );
   });
 
-  test("Pos_Fun_0019 - Numerical input handling", async ({ page }, testInfo) => {
+  test("Pos_Fun_0019 - Numerical input", async ({ page }, testInfo) => {
     await runPositiveTest(
       page,
       testInfo,
@@ -283,14 +283,14 @@ test.describe("Positive Test Cases - Tamil Transliteration", () => {
     );
   });
 
-  test("Pos_Fun_0024 - Long input paragraph (300+ chars)", async ({
+  test("Pos_Fun_0024 - Long input paragraph", async ({
     page,
   }, testInfo) => {
     await runPositiveTest(
       page,
       testInfo,
-      "avan indaiku kaalaila seekiram elumbi velaikku poka irunthaan aana amma vanthu saappitutu po endu sonnanga naan illa enakku neram aakitu naan pokanum endu solliyum avanga enna vidala",
-      "அவன் இண்டைக்கு காலைல சீக்கிரம் எழும்பி வேலைக்கு போக இருந்தான் ஆனா அம்மா வந்து சாப்பிட்டுட்டு போ எண்டு சொன்னாங்க நான் இல்ல எனக்கு நேரம் ஆகிட்டு நான் போகணும் எண்டு சொல்லியும் அவங்க என்ன விடல"
+      "avan indaiku kaalaila seekiram elumbi velaikku poka irunthaan aana amma vanthu saappitutu po endu sonnanga naan illa enakku neram aakitu naan pokanum endu solliyum avanga enna vidala athaala thaan naan avangalukku theriyaama romba amaithiya  kilampitten",
+      "அவன் இண்டைக்கு காலைல சீக்கிரம் எழும்பி வேலைக்கு போக இருந்தான் ஆனா அம்மா வந்து சாப்பிட்டுட்டு போ எண்டு சொன்னாங்க நான் இல்ல எனக்கு நேரம் ஆகிட்டு நான் போகணும் எண்டு சொல்லியும் அவங்க என்ன விடல அதால தான் நான் அவங்களுக்கு தெரியாம ரொம்ப அமைதியா கிளம்பிட்டேன் "
     );
   });
 });
