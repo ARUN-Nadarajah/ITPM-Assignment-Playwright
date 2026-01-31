@@ -1,0 +1,23 @@
+{
+  "name": "tamil-transliteration-test-suite",
+  "version": "1.0.0",
+  "description": "Automated end-to-end test suite for Tamil transliteration validation",
+  "main": "playwright.config.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:watch": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "tamil",
+    "transliteration"
+  ],
+  "author": "IT23581652",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.0"
+  }
+}
