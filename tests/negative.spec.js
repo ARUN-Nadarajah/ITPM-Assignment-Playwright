@@ -148,6 +148,6 @@ test.describe("Abnormal Input Test Cases - Tamil Transliteration", () => {
   });
 
   test("Neg_Fun_010 - Random gibberish input", async ({ page }, testInfo) => {
-    await runNegativeTest(page, testInfo, "xyz", "அ");
+    await runNegativeTest(page, testInfo, "xyz", "xyz");
   });
 });
