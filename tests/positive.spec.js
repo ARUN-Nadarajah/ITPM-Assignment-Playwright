@@ -194,7 +194,7 @@ test.describe("Positive Test Cases - Tamil Transliteration", () => {
   });
 
   test("Pos_Fun_0013 - Special characters only", async ({ page }, testInfo) => {
-    await runPositiveTest(page, testInfo, "@#$%", "@#$%");
+    await runPositiveTest(page, testInfo, "#$%^&*", "#$%^&*");
   });
 
   test("Pos_Fun_0014 - Empty string input", async ({ page }, testInfo) => {
